@@ -1,8 +1,10 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<h2>This is the post list.</h2>
     {% for post in posts %}
         <article class="post">
+            
             <time class="date">
                 {{ post.published_date }}
             </time>
